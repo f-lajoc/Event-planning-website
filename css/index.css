@@ -7,3 +7,6 @@ nav ul, nav{
   align-items: center;
   list-style-type: none;
 }
+.vendor-card,.planner-card{
+  border: 3px solid grey;
+}
