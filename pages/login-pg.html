@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login page</title>
+	</head>
+	<body>
+		<header>
+			<h1>Welcome Back</h1>
+			<p>Login into your account below</p>
+		</header>
+		<main>
+			<div class="login-with-socials">
+				<button>Sign in with Google</button>
+				<button>Sign in with Facebook</button>
+			</div>
+			<!-- line break -->
+			<div class="login-alternative-break">
+				<hr />
+				<span>or</span>
+				<hr />
+			</div>
+<!--end of line break -->
+<!-- form start -->
+			<form id="login-details-form">
+				<!-- login using email or password will be made functional with javascript -->
+				<label for="identifier">Email/Phone Number</label>
+				<input type="text" name="identifier" id="identifier" required />
+				<!-- password input -->
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" />
+				<!-- end of password input -->
+				<!-- forgot-password -->
+				<div class="forgot-password">
+					<label for="checkbox">
+						<input type="checkbox" name="checkbox" id="checkbox" />
+						Remember me</label>
+					<p><a href="">Forgot password</a></p>
+				</div>
+				<!-- end of forgot-password -->
+
+				<button type="submit">Login</button>
+			</form>
+			<!-- form end -->
+      <p>Don’t have an account? <a href="./signup-pg.html">Sign up</a> </p>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+</head>
+<body>
+  <header>
+    <h1>Sign up to get started</h1>
+    <p>Event planners meets vendors</p>
+  </header>
+  <main>
+    <div class="login-with-socials">
+      <button>Sign up with Google</button>
+      <button>Sign up with Facebook</button>
+    </div>
+    <!-- line break -->
+    <div class="login-alternative-break">
+      <hr />
+      <span>or</span>
+      <hr />
+    </div>
+<!--end of line break -->
+
+    <!-- form start -->
+<form id="signup-details-form">
+<label for="name">Name</label>
+<input type="text" name="name" id="name">
+<!-- signup using email or password will be made functional with javascript -->
+<label for="identifier">Email/Phone Number</label>
+<input type="text" name="identifier" id="identifier" required />
+<!-- password input -->
+<label for="password">Password</label>
+<input type="password" name="password" id="password" />
+<!-- end of password input -->
+  <label for="T&C">
+    <input type="checkbox" name="T&C" id="T&C" />
+    I agree with Terms and Privacy conditions</label>
+    <!-- signup btn -->
+    <button type="submit">Sign up</button>
+</form>
+     <!-- form end -->
+     <p>Already  have an account? <a href="./login-pg.html">Login</a> </p>
+</body>
+</html>
