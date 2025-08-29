@@ -1,0 +1,50 @@
+body{
+  color: #000000;
+}
+
+nav{
+  background-color: #D9D9D9;
+  padding: 0 1em;
+}
+nav, nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+align-items: center;
+ 
+}
+/* clear spacing before logo */
+nav ul{
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+  padding-right: 0.5em;
+  
+}
+
+header{
+  background-image: url(/images/img1.jpg);
+  background-color: #CFC5C5;
+  height: 20em;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+header div{
+  border: 1px solid red;
+}
+#categories-label, #search-label{
+  border: 1px solid blue;
+  padding: 0.3em;
+  background-color: #D9D9D9;
+}
+
+
+
+.vendor-card,.planner-card{
+  border: 3px solid grey;
+}

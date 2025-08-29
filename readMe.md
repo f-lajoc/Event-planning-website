@@ -1,3 +1,4 @@
+**WORK IN PROGRESS**
 - Remember to make the homepage change whhenuser logs in (since overview and homepage is the same except the user login icon)
 - Make the cards repeat with js
 - add all necessary icons with fontawesome
