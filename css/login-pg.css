@@ -9,7 +9,6 @@ body {
   margin: 1em;
   font-family: "Roboto", sans-serif;
 }
-
 .home {
   margin-bottom: 1em;
 }
@@ -96,21 +95,23 @@ a {
 @media screen and (min-width: 760px) {
   .hero-img {
     display: block;
-    background-image: url("/images/login-hero.png");
+    /* background-image: url("/images/login-hero.png");
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 50vw;
+    background-repeat: no-repeat; */
+    content: url("/images/login-hero.png");
+    height: 74rem;
+    width: 35rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   }
 
   body {
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-   
+    justify-content: center;
   }
-
+  
   main {
-    width: 50%;
+    width: 40rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   }
 
   .home-icon {
@@ -128,4 +129,11 @@ a {
     border-radius: 5px;
     padding: 5px;
   }
+
+  .login-with-socials button, input, form button, body{
+  font-size: 1.5rem;
+}
+header h1 {
+  font-size: 3.5rem;
+}
 }
