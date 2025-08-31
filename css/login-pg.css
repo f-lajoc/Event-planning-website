@@ -1,66 +1,131 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
-  background-color: ;
+
+body {
   color: #000000;
-  margin: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 2em;
-  font-family: ;
+  margin: 1em;
+  font-family: "Roboto", sans-serif;
 }
-header h1{
-  font-family: sans-serif;
+
+.home {
+  margin-bottom: 1em;
+}
+
+.hero-img {
+  display: none;
+}
+
+main {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  padding: 1em;
+}
+
+header h1 {
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
-.login-with-socials{
+
+.login-with-socials {
   margin: 1em 0;
   display: flex;
   flex-direction: column;
 }
-.login-with-socials button, input, form button{
+
+.login-with-socials button,
+input,
+form button {
   padding: 1em;
   margin: 1em 0;
   border-radius: 10px;
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
-.login-with-socials button{
+
+.login-with-socials button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-span img{
+
+span img {
   width: 20px;
   padding-right: 30px;
 }
-.login-alternative-break{
+
+.login-alternative-break {
   display: flex;
   flex-direction: row;
-justify-content: space-around;
-align-items: center;
-font-weight: bold;
-color: #827E7E;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: #827E7E;
 }
-.line-break{
+
+.line-break {
   width: 45%;
   border-top: 2px solid #827E7E;
 }
-#login-details-form{
-   margin-top: 2em;
+
+#login-details-form {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
-.forgot-password{
+
+.forgot-password {
   display: flex;
   flex-direction: row;
-      justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-a{
+
+a {
   color: #541059CC;
+  text-decoration: none;
 }
-#submit{
+
+#submit {
   background-color: #541059;
   color: white;
+}
+
+/* larger devices */
+@media screen and (min-width: 760px) {
+  .hero-img {
+    display: block;
+    background-image: url("/images/login-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+  }
+
+  body {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+   
+  }
+
+  main {
+    width: 50%;
+  }
+
+  .home-icon {
+    display: none;
+  }
+
+  .fa-angle-left {
+    color: black;
+    padding-right: 4px;
+  }
+
+  .hero-img a {
+    color: black;
+    background-color: #EAE5ED;
+    border-radius: 5px;
+    padding: 5px;
+  }
 }
