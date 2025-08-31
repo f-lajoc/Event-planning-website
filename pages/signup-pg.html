@@ -3,24 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap" rel="stylesheet">
+      <!-- fa icons -->
+      <script src="https://kit.fontawesome.com/434622864a.js" crossorigin="anonymous"></script>
+      <!-- css -->
+      <link rel="stylesheet" href="/css/login-signup-pg.css">
   <title>Signup Page</title>
 </head>
+
 <body>
+  <!-- for large screen -->
+  <div class="home">
+		<div class="home-icon">
+			<a href="/index.html"><i class="fa-solid  fa-circle-left"></i></a>
+		</div>
+		<div class="signup-hero-img"><a href="/index.html"><i class="fa-solid fa-angle-left"></i>Back to website</a> </div>
+	</div>
+  <!-- end -->
+
+  <main>
   <header>
-    <h1>Sign up to get started</h1>
+    <h1 class="signup-h1">Sign up to get started</h1>
     <p>Event planners meets vendors</p>
   </header>
-  <main>
-    <div class="login-with-socials">
-      <button>Sign up with Google</button>
-      <button>Sign up with Facebook</button>
+
+ 
+    <div class="signup-with-socials">
+      <button>
+        <span class="social-icon"><img   src="/images/icons/google.png" alt="goole icon"></span> Sign up with Google
+      </button>
+      <button>
+        <span class="social-icon"><img   src="/images/icons/facebook.png" alt="facebook icon"></span> Sign up with Facebook
     </div>
     <!-- line break -->
-    <div class="login-alternative-break">
-      <hr />
-      <span>or</span>
-      <hr />
-    </div>
+			<div class="signup-alternative-break">
+        <div class="line-break"></div>
+        <p>or</p>
+        <div class="line-break"></div>
+        </div>
 <!--end of line break -->
 
     <!-- form start -->
@@ -38,9 +61,10 @@
     <input type="checkbox" name="T&C" id="T&C" />
     I agree with Terms and Privacy conditions</label>
     <!-- signup btn -->
-    <button type="submit">Sign up</button>
+    <button id="submit" type="submit">Sign up</button>
 </form>
      <!-- form end -->
      <p>Already  have an account? <a href="./login-pg.html">Login</a> </p>
+    </main>
 </body>
 </html>
