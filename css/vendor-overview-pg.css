@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  text-align: center;
+margin: 1em;
+}
+/* hero part */
+.hero-image{
+   background-image: linear-gradient(rgba(74, 74, 69, 0.6),rgba(217, 217, 217, 0.4)), url(/images/vendor-hero.png); 
+   background-position: center;
+   background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.hero-content {
+  color: white;
+}
+.hero-icon{
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+}
+.fa-circle-left{
+  color: #541059cc;
+}
+.fa-comment-dots{
+  padding-right: 1em;
+  color: white;
+}
+.hero-text{
+  text-align: left;
+font-size: .7em;
+padding-left: 1em;
+}
+.hero-text h1{
+  font-size: 1.5em;
+  margin: 8rem 0 0 0;
+  margin-bottom: .2em;
+}
+.hero-text p,.hero-text button{
+  margin-top: .3em;
+}
+.fa-location-dot, .fa-phone{
+padding-right: 3px;
+}
+.hero-text button{
+margin-top: 1em;
+background-color: #541059cc;
+color: white;
+border-radius: 5px;
+padding: 3px;
+font-size: .8em;
+}
+main{
+  margin: 1.5em 1em;
+}
+/* our services  */
+.services-card-container{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.service-card img{
+  width: 150px;
+}
+.service-card p{
+
+  margin: .5em 0 1.5em;
+  font-size: .8rem;
+}
+/* about us */
+.about p{
+  text-align: justify;
+  margin: 1.5em 0;
+}
+.about h2{
+  margin: .5em 0;
+}
+.about-us-btns{
+  display: flex;
+}
+.avail-btn, .booking-btn{
+  border: 1px solid #541059;
+  background-color: white;
+  border-radius: 5px;
+  padding: 6px;
+}
+.booking-btn{
+  background-color: #541059;
+  color: white;
+  margin-left: 2em;
+}
+
+/* more works */
+.more-works{
+  margin: 2em 0;
+}
+/* review cards */
+.review-cards{
+  margin: 2em 0;
+display: flex;
+justify-content: space-between;
+}
+.review-cards div{
+  background-color: #928493;
+    border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 40%;
+  padding: 2em;
+}
+
+
+
+
+/* larger devices */
+@media screen and (min-width: 760px) {
+  body{
+    margin: 1em 3em;
+  }
+  /* hero part */
+  .hero-icon, .hero-text{
+    padding: 1em;
+  }
+   .hero-icon{
+
+     font-size: 1em;
+   }
+.hero-image{
+  height: 400px;
+}
+.hero-text h1{
+  font-size: 2em;
+  margin: 6rem 0 0 0;
+}
+.hero-text{
+  font-size: 1em;
+}
+/* our services image display */
+.service-card img{
+  width: 300px;
+  height: 350px;
+}
+.service-card p{
+  margin: .5em 0 1.5em;
+  font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+}
