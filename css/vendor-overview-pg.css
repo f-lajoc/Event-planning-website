@@ -102,20 +102,31 @@ main{
   margin: 2em 0;
 }
 /* review cards */
-.review-cards{
+.review-cards-container{
   margin: 2em 0;
 display: flex;
-justify-content: space-between;
+flex-direction: column;
 }
-.review-cards div{
+.review-cards{
   background-color: #928493;
     border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  width: 40%;
   padding: 2em;
+  margin-bottom: 1em;
 }
-
-
+.review-cards-rev{
+  text-align: left;
+}
+.review-cards-id{
+  display: flex;
+  flex-direction: row;
+ border: 1px solid red;
+ justify-content: space-between;
+ margin-top: 1em;
+}
+.review-cards-id .fa-solid{
+  color: red;
+}
 
 
 /* larger devices */
@@ -150,8 +161,16 @@ justify-content: space-between;
   margin: .5em 0 1.5em;
   font-size: .8rem;
 }
-
-
+/* review cards */
+.review-cards-container{
+  margin: 2em 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.review-cards{
+  width: 40%;
+}
 
 
 
