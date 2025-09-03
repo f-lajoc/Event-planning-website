@@ -120,12 +120,48 @@ flex-direction: column;
 .review-cards-id{
   display: flex;
   flex-direction: row;
- border: 1px solid red;
  justify-content: space-between;
  margin-top: 1em;
+ font-weight: bold;
 }
-.review-cards-id .fa-solid{
-  color: red;
+.review-cards-id .fa-star{
+width: .8em;
+    padding-right: .3em;
+}
+/* send inquiry */
+
+.send-inquiry form{
+  margin: 1em 3em 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.send-inquiry label{
+  margin-bottom: .5em;
+}
+.send-inquiry input{
+  border: 5px solid #BCA2BE;
+  border-radius: 5px;
+  height: 4em;
+  margin-bottom: 1em;
+}
+#message {
+  height: 7em;
+}
+#submit-btn{
+margin-top: 5em;
+background-color: #541059;
+color: #D9D9D9;
+border: none;
+}
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+#brand-logo{
+  border: 1px solid #541059;
+  height: 20px;
 }
 
 
