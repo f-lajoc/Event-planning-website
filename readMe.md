@@ -3,3 +3,4 @@
 - Make the cards repeat with js
 - add all necessary icons with fontawesome
 - add link to the message icon in vendor-overview-pg
+- style the grid in vendor-overview-pg 

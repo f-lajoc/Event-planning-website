@@ -98,9 +98,32 @@ main{
 }
 
 /* more works */
-.more-works{
+.more-works-section h2,.more-works-section{
   margin: 2em 0;
 }
+.more-works{
+ 
+            display: grid;
+            grid-gap: 16px;
+            /* Creates responsive columns that are at least 300px wide */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* This is the key to the masonry effect. It automatically adds new rows */
+            grid-auto-rows: 150px;  
+        
+}
+  .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+.more-works img{
+  width: 200px;
+}
+
 /* review cards */
 .review-cards-container{
   margin: 2em 0;
@@ -158,12 +181,15 @@ border: none;
 footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #brand-logo{
   border: 1px solid #541059;
   height: 20px;
 }
-
+.fa-instagram,.fa-tiktok,.fa-facebook-f{
+  padding: .5em .5em;
+}
 
 /* larger devices */
 @media screen and (min-width: 760px) {
@@ -207,7 +233,9 @@ justify-content: space-between;
 .review-cards{
   width: 40%;
 }
-
+.send-inquiry form{
+  margin: 1em 6em 0;
+}
 
 
 
