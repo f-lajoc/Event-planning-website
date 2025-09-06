@@ -3,47 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fa icons -->
+      <script src="https://kit.fontawesome.com/434622864a.js" crossorigin="anonymous"></script>
+      <!-- css -->
+  <link rel="stylesheet" href="/css/admin-planner.css">
   <title>Admin planner list</title>
 </head>
 <body>
+
+  <aside>
   <nav class="nav-bar">
-    <ul>
+    <div class="openMenu">  <i class="fa fa-bars"></i></div>
+    <div class="closeMenu">  <i class="fa fa-times"></i></div>
+    <ul class="mainMenu">
       <li><img src="" alt="logo"></li>
       <li><a href="http://">Dashboard</a></li>
       <li><a href="http://">Notification</a></li>
       <li><a href="http://">Vendors List</a></li>
       <li><a href="http://">Planner List</a></li>
       <li><a href="http://">Booking Analysis</a></li>
+      <p><i class="fa-solid  fa-circle-left"></i></p>
       
     </ul>
   </nav>
-  <header>
-    <div>navbar icon</div>
+</aside>
+
+<header>
+  
     <h1>Planner List</h1>
-    <input type="search" name="planner-list" id="planner-list" placeholder="Search for a planner">
-    <p>search icon</p>
+
+<div class="search-set">
+    <input type="text" name="planner-list" id="planner-list" placeholder="Search for a planner">
+   <p><i class="fa-solid fa-magnifying-glass"></i></p>
+</div>
+
+
   </header>
-  <div>
-    <p>S/N</p>
-    <p>Vendor Names</p>
-    <p>Email</p>
-    <p>Location</p>
-    <p>Status</p>
-    <p>Ratings</p>
-  </div>
-  <div>
-    <p>1</p>
-    <p>Edward planner</p>
-    <p>Edward planner@gmail.com</p>
-    <p>Abuja</p>
-    <p>Available</p>
-    <p>Excellent</p>
-  </div>
-  <!-- use javascript to repeat these cards to serial number 14 -->
 
-
-  <main>
-
+  <main class="container">
+ <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tb-data a">S/N</th>
+                        <th class="tb-data">Vendor Names</th>
+                        <th class="tb-data">Email</th>
+                        <th class="tb-data">Location</th>
+                        <th class="tb-data">Status</th>
+                        <th class="tb-data">Ratings</th>
+                    </tr>
+                </thead>
+                <tbody id="vendorTableBody">
+                    <!-- Table rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
   </main>
+  <script src="/js/admin-planner.js"></script>
 </body>
 </html>

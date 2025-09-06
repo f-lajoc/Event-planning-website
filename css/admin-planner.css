@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar{
+  display: none;
+}
+header h1{
+  padding:.2em ;
+  background-color: #BCA2BE;
+  text-align: center;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+/* .search-set{
+  display: flex;
+  margin-bottom: 1em;
+}
+.tb-data{
+  text-align: left;
+  padding-right: 2em;
+}
+th {
+color: red;
+text-align: center;
+} */
+
+
+/* larger devices */
+@media screen and (min-width: 760px) {
+
+
+
+
+
+
+
+
+}
