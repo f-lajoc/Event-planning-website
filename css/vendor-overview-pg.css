@@ -65,10 +65,14 @@ main{
   flex-wrap: wrap;
     justify-content: space-around;
     margin: 1em 0;
+  }
+  .service-card img{
+    width: 150px;
+    animation: ourservices 2s ease-in 1s 1 normal none;
+ 
 }
-.service-card img{
-  width: 150px;
-}
+
+
 .service-card p{
 
   margin: .5em 0 1.5em;
@@ -106,9 +110,9 @@ main{
             display: grid;
             grid-gap: 16px;
             /* Creates responsive columns that are at least 300px wide */
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             /* This is the key to the masonry effect. It automatically adds new rows */
-            grid-auto-rows: 150px;  
+            grid-auto-rows: 200px;  
         
 }
   .grid-item {
@@ -122,6 +126,7 @@ main{
         }
 .more-works img{
   width: 200px;
+  animation: moreworks 5s ease-in 0s infinite normal forwards;
 }
 
 /* review cards */
@@ -190,6 +195,49 @@ footer{
 .fa-instagram,.fa-tiktok,.fa-facebook-f{
   padding: .5em .5em;
 }
+hr{
+  border: 1px solid #541059;
+  margin: 1em 0 .5em;
+}
+
+/* animation */
+@keyframes ourservices {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+/* animation 2 */
+@keyframes moreworks  {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* larger devices */
 @media screen and (min-width: 760px) {
@@ -216,8 +264,7 @@ footer{
 }
 /* our services image display */
 .service-card img{
-  width: 300px;
-  height: 350px;
+  width: 350px;
 }
 .service-card p{
   margin: .5em 0 1.5em;
