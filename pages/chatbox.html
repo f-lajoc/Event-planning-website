@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- fa icons -->
+		<script
+			src="https://kit.fontawesome.com/434622864a.js"
+			crossorigin="anonymous"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="/css/chatbox.css" />
+		<title>Chatbox</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Chat Header -->
+			<div class="chat-header">
+				<a href="/index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+				<h1>Tummy Photography</h1>
+				<p class="logo">logo</p>
+			</div>
+
+			<!-- Chat Messages Container -->
+			<div id="chat-container" class="chat-messages">
+				<!-- Initial bot message -->
+				<div class="chat-message">
+					<div class="chat-message-bubble bot">
+						<p>Hello! Welcome to Tummy Photography!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Input Area -->
+			<div class="input-area">
+				<input type="text" id="user-input" placeholder="Type a message..." />
+				<button id="send-btn">Send</button>
+			</div>
+		</div>
+		<script src="/js/chatbox.js"></script>
+	</body>
+</html>

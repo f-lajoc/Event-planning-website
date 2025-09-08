@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.nav-bar{
-  display: none;
+body{
+    font-family: "DM Sans", sans-serif;
 }
 header h1{
   padding:.2em ;
@@ -13,28 +13,100 @@ header h1{
   padding: .5em;
   margin-bottom: 1em;
 }
-/* .search-set{
+ .search-set{
   display: flex;
+      align-items: center;
+    justify-content: flex-end;
+  margin: 1em;
+}
+.fa-magnifying-glass{
+color: white;
+background-color: #54105999;
+border-radius: 5px;
+padding: .5em;
+font-size: 14px;
+}
+
+input[type=search]{
+  border: none;
+  padding: .5em;
+}
+input:focus{
+ color: white;
+background-color: #54105999;
+outline: none;
+border-radius: 5px;
+}
+/* table */
+.table-container{
+  overflow-x: auto;
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+table{
+  width: 100%;
+  border: 1px solid #b9a3ba;
+  border-spacing: 0;
+}
+thead{
+  background-color: #BB9FBD;
+
+}
+#serialNo, tr>:first-child{
+  text-align: center;
+}
+th,td{
+  padding: 1em;
+  text-align: left;
+}
+
+/* sidebar menu */
+
+.topnav #myLinks {
+  position: fixed;
+  left: -250px;   /* hide it off-screen initially */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #5D1263;
+  overflow-x: hidden;
+  transition: 0.3s ease; /* smooth sliding */
+  padding-top: 6px;
+  z-index: 1000;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  
+  display: block;
+ position: fixed;
+       left: 0;
+    top: -5px;
+}
+.fa-arrow-left, .fa-xmark{
+background-color: #54105970;
+color: black;
+border-radius: 50%;
+padding: .5em;
+  font-size: 1em;
+}
+.fa-xmark{
+background-color: white;
+}
+#logo{
+  background-color: white;
+  padding: .5em 1em;
+  color: black;
+  font-size: 1em;
   margin-bottom: 1em;
 }
-.tb-data{
-  text-align: left;
-  padding-right: 2em;
-}
-th {
-color: red;
-text-align: center;
-} */
-
-
-/* larger devices */
-@media screen and (min-width: 760px) {
-
-
-
-
-
-
-
-
+.fa-star{
+  padding-right: .5em;
+  font-size: 1 em;
 }
