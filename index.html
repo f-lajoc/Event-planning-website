@@ -15,23 +15,137 @@
   <title>Event Planning Homepage</title>
 </head>
 <body>
+<!--start of mobile nav  -->
+   <!-- Top Navigation Menu -->
+<div class="topnav sidenav">
+  <div id="myLinks">
+     <a href="javascript:void(0);" onclick="myFunction2()">
+    <i class="fa-solid fa-xmark"></i></a>
+
+  <!--Vendor dropdown -->
+    <button class="dropdown-btn">Vendors
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="pages/vendor-overview-pg.html">Profile</a>
+      <a href="">Dashboard</a>
+      <a href="pages/notification-pg.html">Notifications</a>
+      <a href="pages/chatbox.html">Chatbox</a>
+
+    </div>
+   <!-- end dropdown -->
+     <!--Planner dropdown -->
+     
+    <button class="dropdown-btn">Planners
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="pages/planners-profile-pg.html">Profile</a>
+      <a href="">Dashboard</a>
+      <a href="pages/notification-pg.html">Notifications</a>
+      <a href="pages/chatbox.html">Chatbox</a>
+    </div>
+ 
+   <!-- end dropdown -->
+       <!--Admin dropdown -->
+    <button class="dropdown-btn">Admin
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="">Dashboard</a>
+      <a href="pages/admin-planner-list-pg.html">Planner List</a>
+      <a href="pages/admin-vendor-pg.html">Vendor List</a>
+      <a href="pages/admin-notification-pg.html">Admin Notifications</a>
+    </div>
+
+      <!--More dropdown -->
+    <button class="dropdown-btn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="pages/user-profile.html">User profile</a>
+      <a href="pages/login-pg.html">Login</a>
+      <a href="pages/signup-pg.html">Signup</a>
+    </div>
+ 
+   <!-- end dropdown -->
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-arrow-left"></i></a>
+</div>
+<!--end of mobile nav  -->
+
+<!-- desktop nav view -->
+ <div class="desktop-nav">
   <nav>
-    <ul>
-      <li>Logo</li>
-      <li>Home</li>
-      <li><a href="pages/vendor-overview-pg.html">Vendors</a></li>
-      <li><a href="pages/planners-profile-pg.html">Planner</a></li>
-      <li><a href="pages/admin-planner-list-pg.html">Admin Planner</a></li>
-      <li><a href="pages/admin-vendor-pg.html">Admin Vendor</a></li>
-      <li><a href="pages/notification-pg.html">Notifications</a></li>
-      <li>More</li>
-    </ul>
+    <div class="desktop-nav-main">
+    <div>
+       <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+      <a href="index.html" class="home">Home</a>
+    </div>
+      <!--Vendor dropdown -->
+       <div class="dropdown">
+    <button class="dropbtn">Vendors
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="pages/vendor-overview-pg.html">Profile</a>
+      <a href="">Dashboard</a>
+      <a href="pages/notification-pg.html">Notifications</a>
+      <a href="pages/chatbox.html">Chatbox</a>
+    </div>
+  </div>
+   <!-- end dropdown -->
+      <!--Planner dropdown -->
+       <div class="dropdown">
+    <button class="dropbtn">Planners
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="pages/planners-profile-pg.html">Profile</a>
+      <a href="">Dashboard</a>
+      <a href="pages/notification-pg.html">Notifications</a>
+      <a href="pages/chatbox.html">Chatbox</a>
+    </div>
+  </div>
+   <!-- end dropdown -->
+
+      <!--Admin dropdown -->
+       <div class="dropdown">
+    <button class="dropbtn">Admin
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="">Dashboard</a>
+      <a href="pages/admin-planner-list-pg.html">Planner List</a>
+      <a href="pages/admin-vendor-pg.html">Vendor List</a>
+      <a href="pages/admin-notification-pg.html">Admin Notifications</a>
+    </div>
+  </div>
+   <!-- end dropdown -->
+
+      <!--More dropdown -->
+       <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="pages/user-profile.html">User profile</a>
+      <a href="pages/login-pg.html">Login</a>
+      <a href="pages/signup-pg.html">Signup</a>
+    </div>
+  </div>
+  </div>
+   <!-- end dropdown -->
+    
       <div class="action-nav-btns">
       <button><a href="pages/login-pg.html">Login</a></button>
-      <button><a href="pages/signup-pg.html">Signup</a></button>
+      <button id="signup-btn"><a href="pages/signup-pg.html">Signup</a></button>
     </div>
     
   </nav>
+</div>
+    <!-- end of desktop nav -->
   <header>
     <h1>Planners meets Vendors</h1>
     <div>
@@ -47,79 +161,43 @@
   </header>
   <!-- end of header -->
 <main>
-  <!-- use javascript to make the cards repeat, this is just structure -->
-  <section class="vendors">
-    <div class="vendor-filtering">
-      <h2>Discover Different Vendors</h2>
-      <!-- dropdown menu -->
+  
+ <!-- Vendors Section -->
+        <section class="vendors-section container">
+            <div class="vendors-header">
+                <h2>Discover Different Vendors</h2>
+               <!-- dropdown menu -->
 <label for="categories">Filter by Location</label>
 <select name="categories" id="categories"></select>
    
-    </div>
-    <!-- start of vendors card -->
-    <div class="vendor-card">
-<div>
-  <p>Available</p>
-  <p>icon</p>
-  <img src="" alt="vendor img">
+           <div id="vendors-grid" class="vendor-grid">
+    <!-- Vendor cards will be dynamically added here by JavaScript -->
 </div>
-<div>
-  <img src="" alt="brand logo">
-  <h3>Gift Ushering Service</h3>
-  <p>No 1 , ushering service in Lagos</p>
-</div>
-<div class="contact">
-  <p>Lagos</p>
-  <p>+2347047297315</p>
-</div>
-<div class="review">
-  <p>rating</p>
-  <p>Reviews</p>
-</div>
-<div class="btns">
-  <button>Learn more</button>
-  <button>Book service</button>
-</div>
-</div>
-<!-- end of vendors card -->
-  </section>
+             
+            </div>
+        </section>
 
-   <!-- use javascript to make the cards repeat, this is just structure -->
-   <section class="planners">
-    <div class="planners-filtering">
+ <!-- Planners Section -->
+   <section id="planners-section-container" class="vendors-section container">
+    <div id="planners-header" class="vendors-header">
       <h2>Discover Different Planners</h2>
       <!-- dropdown menu -->
 <label for="categories">Filter by Location</label>
 <select name="categories" id="categories"></select>
    
-    </div>
+
     <!-- start of planners card -->
-    <div class="planner-card">
-<div>
-  <p>Available</p>
-  <p>icon</p>
-  <img src="" alt="planners img">
+   
+           <div id="planners-grid" class="vendor-grid">
+                <!-- Planner cards will be dynamically added here by JavaScript -->
+            </div>
 </div>
-<div>
-  <img src="" alt="brand logo">
-  <h3>Gift Ushering Service</h3>
-  <p>No 1 , ushering service in Lagos</p>
-</div>
-<div class="contact">
-  <p>Lagos</p>
-  <p>+2347047297315</p>
-</div>
-<div class="review">
-  <p>rating</p>
-  <p>Reviews</p>
-</div>
-<div class="btns">
-  <button>Learn more</button>
-  <button>Book service</button>
-</div>
-</div>
+   </section>
 <!-- end of planners card -->
 </main>
+
+
+
 <footer>
   <img src="" alt="logo">
 <h4>Planners meets Vendors</h4>
@@ -129,5 +207,7 @@
 <p><a href="pages/admin-planner-list-pg.html">More</a></p>
 <p>2025 EventManagement. All Rights Reserved.</p>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
