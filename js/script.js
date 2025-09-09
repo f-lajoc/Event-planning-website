@@ -64,7 +64,10 @@
                             <img src="https://placehold.co/400x250/5C3D6A/ffffff?text=${encodeURIComponent(
 															item.name
 														)}" alt="${item.name} Image">
+														<div class="badge-container">
                             <span class="badge">Available</span>
+																												<p>hi</p>
+																												</div>
                             <div class="brand-logo"></div>
                         </div>
                         <div class="vendor-card-content">

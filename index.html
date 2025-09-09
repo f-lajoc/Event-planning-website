@@ -148,15 +148,16 @@
     <!-- end of desktop nav -->
   <header>
     <h1>Planners meets Vendors</h1>
-    <div>
+    <div class="dropdnMenu">
       <!-- dropdown menu -->
-<label for="categories" id="categories-label">All categories
- <select name="categories" id="categories"></select></label>
+<select id="all-categories">
+  <option>All Categories</option>
+</select>
  <!-- search btn -->
-  <label for="search" id="search-label" >
+  <div class="dropdnMenu-search">
   <input type="search" name="search" id="search" placeholder="Search for vendors">
-  <i class="fa-solid fa-magnifying-glass">hgf</i></label>
-
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
 </div>
   </header>
   <!-- end of header -->
@@ -167,9 +168,9 @@
             <div class="vendors-header">
                 <h2>Discover Different Vendors</h2>
                <!-- dropdown menu -->
-<label for="categories">Filter by Location</label>
-<select name="categories" id="categories"></select>
-   
+<label for="categories" id="catego" >Filter by Location
+<select name="categories" ></select></label>
+   </div>
            <div id="vendors-grid" class="vendor-grid">
     <!-- Vendor cards will be dynamically added here by JavaScript -->
 </div>
