@@ -1,0 +1,38 @@
+.header {
+	display: flex;
+	background-color: #bca2be;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.topnav a.icon {
+	top: 5px;
+}
+
+/* Profile Card Styles */
+.profile-card {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+
+.profile-card .avatar {
+	width: 30px;
+	height: 30px;
+	background-color: #d3d3d3;
+	border-radius: 50%;
+	position: relative;
+}
+.text-content {
+	font-size: smaller;
+}
+.profile-card .status-indicator {
+	width: 12px;
+	height: 12px;
+	background-color: #00ff00;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -2px;
+	left: -1px;
+	border: 2px solid #92759a;
+}
