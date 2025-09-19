@@ -220,9 +220,8 @@ select{
   padding: .5em;
   color: white;
 }
-input[type="search"]{
-  
-  padding: .4em;
+input[type=search]{
+   padding: .4em;
   background-color: #EAE5ED;
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
@@ -256,6 +255,7 @@ align-items: center
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
+  align-items: center;
 }
  /* Vendor Cards */
         .vendor-grid {
@@ -266,7 +266,7 @@ align-items: center
         }
 
         .vendor-card {
-            background-color: var(--card-bg);
+            background-color: #E2BEE5;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -282,36 +282,27 @@ align-items: center
             height: auto;
             display: block;
         }
-        /* to be continued */
-        /* to be continued */
-        /* to be continued */
-        /* to be continued */
-        /* to be continued */
-        /* to be continued */
-         .badge-container{
-    border: 1px solid red;
-    display: flex;
-   
-    align-items: center;
-    justify-content: flex-start;
-    align-content: space-between;
-    flex-direction: row;
-    position: absolute;
-    top: 10px;
-     left: 10px;
-    gap: 5em;
-        }
-        .vendor-card .badge {
-            /* position: absolute;
-            top: 10px;
-            left: 10px; */
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
+      .badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px; /* so it stretches full width */
+}
+
+        .vendor-card .badge,  .badge-container p {
+            background-color: #E2BEE5;
+            color: black;
             padding: 0.25rem 0.5rem;
-            border-radius: 4px;
+            border-radius: 2px;
             font-size: 0.8rem;
         }
-        
+         .badge-container p{
+background-color: white;
+         }
+         
         .vendor-card .brand-logo {
             position: absolute;
             bottom: -20px;
@@ -347,33 +338,42 @@ align-items: center
             padding: 0 1rem 1rem;
         }
         
-        .vendor-card-footer .location,
+        .vendor-card-footer .location-container,
         .vendor-card-footer .reviews {
             display: flex;
             align-items: center;
             gap: 0.25rem;
+            flex-direction: column;
+        }
+        .vendor-card-footer .location-container{
+          align-items: flex-start
         }
         
         .vendor-card-footer .reviews .stars {
             color: var(--star-color);
         }
 
-        .vendor-card-footer .buttons {
-            display: flex;
-            gap: 0.5rem;
+        .vendor-card-footer-buttons {
+           padding: 0 1rem .5rem;
         }
         
-        .vendor-card-footer button {
+        .vendor-card-footer-buttons button {
             background-color: var(--button-purple);
-            color: white;
-            border: none;
+            color: black;
+            border: 1px solid #541059;
             padding: 0.5rem 0.75rem;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             font-size: 0.8rem;
+      
+        }
+        .vendor-card-footer-buttons .book-service{
+          margin-left: 0.5rem;
+          background-color: #541059;
+          color: white;
         }
         
-        .vendor-card-footer button:hover {
+        .vendor-card-footer-buttons button:hover {
             opacity: 0.9;
         }
 
