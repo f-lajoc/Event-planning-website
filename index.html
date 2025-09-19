@@ -18,6 +18,8 @@
 <!--start of mobile nav  -->
    <!-- Top Navigation Menu -->
 <div class="topnav sidenav">
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-arrow-left"></i></a>
   <div id="myLinks">
      <a href="javascript:void(0);" onclick="myFunction2()">
     <i class="fa-solid fa-xmark"></i></a>
@@ -70,8 +72,7 @@
  
    <!-- end dropdown -->
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa-solid fa-arrow-left"></i></a>
+ 
 </div>
 <!--end of mobile nav  -->
 
@@ -195,13 +196,22 @@
 </main>
 
 <footer>
-  <img src="" alt="logo">
-<h4>Planners meets Vendors</h4>
+  <div class="footer-container">
+    <div>
+  <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+<h4 class="footer-h4">Planners meets Vendors</h4>
+</div>
+<div>
 <h4>Quick Links</h4>
+<div class="quick-links">
 <p><a href="">Home</a></p>
 <p><a href="pages/vendor-overview-pg.html">Vendors</a></p>
 <p><a href="pages/admin-planner-list-pg.html">More</a></p>
-<p>2025 EventManagement. All Rights Reserved.</p>
+</div> 
+</div>
+</div>
+<p class="endnote">2025 EventManagement. All Rights Reserved @TeamNairobi.</p>
+
 </footer>
 
 <script src="js/script.js"></script>

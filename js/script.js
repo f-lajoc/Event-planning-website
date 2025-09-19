@@ -2,11 +2,11 @@
             const data = [
 							{
 								name: "Gift Ushering Service",
-								description: "No.1 ushering service in Lagos",
+								description: "No.1 ushering service in Lagos giving you deserved luxury",
 								location: "Lagos",
 								reviews: 237,
 								stars: 4,
-								image: "./images/card1.jfif",
+								image: "./images/card1.png",
 							},
 							{
 								name: "Lola's Hall",
@@ -15,7 +15,7 @@
 								location: "Abuja",
 								reviews: 19,
 								stars: 5,
-								image: "./images/card2.jpg",
+								image: "./images/card2.png",
 							},
 							{
 								name: "Flexy Ushers",
@@ -28,7 +28,7 @@
 							},
 							{
 								name: "Catering Masters",
-								description: "Exquisite catering for any event size.",
+								description: "Exquisite catering for any event size. Satisfaction is guaranteed",
 								location: "Lagos",
 								reviews: 150,
 								stars: 5,
@@ -36,7 +36,7 @@
 							},
 							{
 								name: "Decorate Your Day",
-								description: "Stunning event decoration services.",
+								description: "Stunning event decoration services. Jawdropping and Droolworthy is goal",
 								location: "Abuja",
 								reviews: 98,
 								stars: 4,
