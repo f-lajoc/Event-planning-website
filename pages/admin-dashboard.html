@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Admin Dashboard</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+		<!-- fa icons -->
+		<script
+			src="https://kit.fontawesome.com/434622864a.js"
+			crossorigin="anonymous"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="/css/vendor-dashboard.css" />
+		<!-- chart js -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+        
  
-</body>
+<nav class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <div id="myLinks">
+     <a href="javascript:void(0);" onclick="myFunction2()">
+    <i class="fa-solid fa-xmark"></i></a>
+
+    <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+    <a href="/pages/admin-dashboard.html">Dashboard</a>
+      <a href="/pages/admin-notification-pg.html">Notification</a>
+      <a href="/pages/admin-vendor-pg.html">Vendor List</a>
+      <a href="/pages/admin-planner-list-pg.html">Planner List</a>
+      <a href="#">Booking Analysis</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-arrow-left"></i></a>
+</div>
+		<div class="dashboard-container">
+			<!-- Header -->
+			<header class="dashboard-header">
+				<div class="header-left">
+					<h1>Dashboard</h1>
+					<p>Welcome, Here is your recent overview.</p>
+				</div>
+				<div class="header-right">
+					<div class="edward-brand-logo"><div class="status-indicator"></div></div>
+					<div class="icons" id="admin-icons">
+						<span class="brand-name">Rhoda Destiny</span>
+
+						<span>Owner
+						</span>
+					</div>
+				</div>
+			</header>
+
+			<!-- Summary Cards -->
+			<section class="summary-cards">
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Total Vendors</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-store"></i>
+						</div>
+					</div>
+
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>122</h2>
+							<p class="increase">+22.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Total Planners</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-calendar-week"></i>
+						</div>
+					</div>
+
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>180</h2>
+							<p class="increase">+34.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Total Bookings</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-clipboard-check"></i>
+						</div>
+					</div>
+
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>10</h2>
+							<p>-8.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Discoveries</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-chart-line"></i>
+						</div>
+					</div>
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>10</h2>
+							<p class="increase">+13.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Booking Activity Chart -->
+			<section class="booking-activity">
+				<h2>Booking Activity</h2>
+				<div class="chart-container">
+					<canvas id="bookingChart"></canvas>
+				</div>
+			</section>
+
+
+			
+					<!--  -->
+<section class="top-rated-section">
+<div class="top-vendors">
+<h2>Top Vendors</h2>
+<div class="top-vendors-cards">
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+</div>
+</div>
+<div class="top-planners">
+<h2>Top Planners</h2>
+<div class="top-planners-cards">
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+<div class="top-card">
+	<p></p>
+	<h3>Tummy Photography</h3>
+	<p>Tummyphotography@gmail.com</p>
+	<p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+</div>
+
+</div>
+</div>
+</section>
+		</div>
+        <script src="/js/admin-planner.js"></script>
+		<script src="/js/vendor-dashboard.js"></script>
+	</body>
 </html>

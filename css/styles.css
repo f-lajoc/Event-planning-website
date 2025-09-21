@@ -101,7 +101,7 @@ align-items: center;
 .topnav a.icon {
  position: absolute;
     z-index: 1000;
-    animation: nav-icon 2s ease 0s infinite normal forwards;
+    /* animation: nav-icon 2s ease 0s infinite normal forwards; */
 }
 .fa-arrow-left, .fa-xmark{
 background-color: #54105970;
@@ -122,7 +122,7 @@ background-color: white;
     border-radius: 20px;
     text-decoration: none;
     position: relative;
-     z-index: 2000;
+     z-index: 1000;
 }
 .fa-star{
   padding-right: .5em;

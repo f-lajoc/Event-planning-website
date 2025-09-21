@@ -1,121 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+		<!-- fa icons -->
+		<script
+			src="https://kit.fontawesome.com/434622864a.js"
+			crossorigin="anonymous"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="/css/vendor-dashboard.css" />
+		<!-- chart js -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<title>Vendor Dashboard</title>
+	</head>
+	<body>
+        
+ 
+<nav class="mobile-container">
 
-      <!-- fa icons -->
-      <script src="https://kit.fontawesome.com/434622864a.js" crossorigin="anonymous"></script>
-      <!-- css -->
-  <link rel="stylesheet" href="/css/vendor-dashboard.css">
-  <!-- chart js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>Vendor Dashboard</title>
-</head>
-<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <div id="myLinks">
+     <a href="javascript:void(0);" onclick="myFunction2()">
+    <i class="fa-solid fa-xmark"></i></a>
 
-    <div class="dashboard-container">
+    <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+    <a href="/pages/vendor-dashboard.html">Dashboard</a>
+      <a href="/pages/notification-pg.html">Notification</a>
+      <a href="#">Booking Analysis</a>
+      <a href="/pages/chatbox.html">Chats</a>
+      <a href="#">Settings</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-arrow-left"></i></a>
+</div>
+		<div class="dashboard-container">
+			<!-- Header -->
+			<header class="dashboard-header">
+				<div class="header-left">
+					<h1>Dashboard</h1>
+					<p>Welcome, Here is your recent overview.</p>
+				</div>
+				<div class="header-right">
+					<div class="brand-logo">Logo</div>
+					<div class="icons">
+						<span class="brand-name">Tummy Photography</span>
 
-        <!-- Header -->
-        <header class="dashboard-header">
-            <div class="header-left">
-                <h1>Dashboard</h1>
-                <p>Welcome, Here is your resent overview.</p>
-            </div>
-            <div class="header-right">
-                <div class="brand-logo">
-                    <div class="logo-placeholder">Brand logo</div>
-                    <span>Tummy Photography</span>
-                </div>
-                <div class="icons">
-                    <div class="icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </header>
+						<div class="icon-wrapper">
+							<span> <i class="fa-regular fa-comment-dots"></i></span>
+							<span><i class="fa-regular fa-bell"></i></span>
+						</div>
+					</div>
+				</div>
+			</header>
 
-        <!-- Summary Cards -->
-        <section class="summary-cards">
-            <div class="summary-card">
-                <div class="card-header">
-                    <h3>Total Bookings</h3>
-                    <div class="icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 7h.01"></path>
-                            <path d="M11 7h.01"></path>
-                            <path d="M12 3v.01"></path>
-                            <path d="M19.07 4.93L19.08 4.92"></path>
-                            <path d="M19.07 19.07L19.08 19.08"></path>
-                            <path d="M4.93 19.07L4.92 19.08"></path>
-                            <path d="M4.93 4.93L4.92 4.92"></path>
-                            <path d="M12 21v.01"></path>
-                            <path d="M20 12h.01"></path>
-                            <path d="M4 12h.01"></path>
-                            <path d="M17 12a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h2>10</h2>
-                    <p>-8.5</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">View details</a>
-                </div>
-            </div>
+			<!-- Summary Cards -->
+			<section class="summary-cards">
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Total Bookings</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-clipboard-check"></i>
+						</div>
+					</div>
 
-            <div class="summary-card">
-                <div class="card-header">
-                    <h3>Discoveries</h3>
-                    <div class="icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 18l4 4"></path>
-                            <path d="M18 16l4 4"></path>
-                            <path d="M19.8 13.5a1.5 1.5 0 0 0-3 0"></path>
-                            <path d="M15 15a4 4 0 0 0 0-8.5v-3a2.5 2.5 0 0 0-5 0v3a4 4 0 0 0 0 8.5"></path>
-                            <path d="M10 11.5a1 1 0 0 0 0 1"></path>
-                            <path d="M15 11.5a1 1 0 0 0 0 1"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                            <path d="M12 20.5a1.5 1.5 0 0 0 0-3"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h2>10</h2>
-                    <p>-16.5</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#">View details</a>
-                </div>
-            </div>
-        </section>
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>10</h2>
+							<p>-8.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
 
-        <!-- Booking Activity Chart -->
-        <section class="booking-activity">
-            <h2>Booking Activity</h2>
-            <div class="chart-container">
-                <canvas id="bookingChart"></canvas>
-            </div>
-        </section>
+				<div class="summary-card">
+					<div class="card-header">
+						<h3>Discoveries</h3>
+						<div class="icon-container">
+							<i class="fa-solid fa-chart-line"></i>
+						</div>
+					</div>
+					<div class="card-body-container">
+						<div class="card-body">
+							<h2>10</h2>
+							<p class="increase">+13.5</p>
+						</div>
+						<div class="card-footer">
+							<a href="#">View details</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    </div>
-<script src="/js/vendor-dashboard.js"></script>
- </body>
+			<!-- Booking Activity Chart -->
+			<section class="booking-activity">
+				<h2>Booking Activity</h2>
+				<div class="chart-container">
+					<canvas id="bookingChart"></canvas>
+				</div>
+			</section>
+		</div>
+        <script src="/js/admin-planner.js"></script>
+		<script src="/js/vendor-dashboard.js"></script>
+	</body>
 </html>

@@ -85,9 +85,8 @@ th,td{
 .topnav a.icon {
   
   display: block;
- position: fixed;
-       left: 0;
-    top: -5px;
+ position: absolute;
+    top: 5px;
 }
 .fa-arrow-left, .fa-xmark{
 background-color: #54105970;
