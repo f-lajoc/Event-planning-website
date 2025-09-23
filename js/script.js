@@ -133,3 +133,4 @@ function myFunction2() {
 	const x = document.getElementById("myLinks");
 	x.style.left = "-250px"; // close sidebar
 }
+

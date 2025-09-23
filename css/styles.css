@@ -118,7 +118,6 @@ background-color: white;
     padding: .5em;
     color: black;
     font-size: 1em;
-    margin-right: 1em;
     border-radius: 20px;
     text-decoration: none;
     position: relative;
@@ -187,7 +186,29 @@ color: black;
 }
 
 /* END OF NAVIGATION STYLE */
-
+#user-login-icon{
+  display: none;
+}
+#mobile-user-login-icon{
+  display: block;
+}
+/* homepage start */
+.user-login-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+   cursor: pointer;
+  object-fit: cover;
+}
+.mobile-login-nav{
+  display: flex;
+}
+.mobile-user-nav{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+/* homepage end */
 
 header{
   background-image: url(/images/img1.jpg);
@@ -416,10 +437,11 @@ footer .endnote{
 
 /* larger devices */
 @media screen and (min-width: 760px) {
-.dropdown,.action-nav-btns{
+.dropdown,.action-nav-btns, #user-login-icon{
   display: block;
 }
-.topnav{
+
+.topnav, #mobile-user-login-icon{
   display: none;
 }
 nav{
@@ -451,6 +473,7 @@ nav ul{
   text-decoration: none;
   color: white;
 }
+
 #signup-btn{
 background-color: #541059;
 }

@@ -12,7 +12,7 @@
       <!-- css -->
   <link rel="stylesheet" href="css/styles.css">
   
-  <title>Event Planning Overview</title>
+  <title>Homepage</title>
 </head>
 <body>
 <!--start of mobile nav  -->
@@ -80,9 +80,14 @@
  <div class="desktop-nav">
   <nav>
     <div class="desktop-nav-main">
-    <div>
-       <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+    <div class="mobile-user-nav">
+       <a href="#home" id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
       <a href="index.html" class="home">Home</a>
+      <a id="mobile-user-login-icon" href="/pages/user-profile.html">
+      <img class="user-login-icon"
+        src="/images/img1.jpg"
+        alt="user profile icon"/>
+    </a>
     </div>
       <!--Vendor dropdown -->
        <div class="dropdown">
@@ -138,11 +143,14 @@
   </div>
   </div>
    <!-- end dropdown -->
+  
     
-      <div id="action-nav-btns" class="action-nav-btns">
-      <button><a id="signin-link" href="pages/login-pg.html">Login</a></button>
-      <button id="signup-btn"><a href="pages/signup-pg.html">Signup</a></button>
-    </div>
+      <!-- for user login -->
+     <a id="user-login-icon" href="/pages/user-profile.html">
+      <img class="user-login-icon"
+        src="/images/img1.jpg"
+        alt="user profile icon"/>
+    </a>
     
     
   </nav>
