@@ -3,9 +3,139 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+		<!-- fa icons -->
+		<script
+			src="https://kit.fontawesome.com/434622864a.js"
+			crossorigin="anonymous"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="/css/vendor-dashboard.css" />
+  <link rel="stylesheet" href="/css/user-profile.css">
  <title>User Profile</title>
 </head>
 <body>
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <div id="myLinks">
+     <a href="javascript:void(0);" onclick="myFunction2()">
+    <i class="fa-solid fa-xmark"></i></a>
+
+    <a href="#home"  id="logo"><i class="fa-solid fa-star"></i>LOGO</a>
+    <a href="/pages/admin-dashboard.html">Dashboard</a>
+      <a href="/pages/admin-notification-pg.html">Notification</a>
+      <a href="/pages/admin-vendor-pg.html">Vendor List</a>
+      <a href="/pages/admin-planner-list-pg.html">Planner List</a>
+      <a href="#">Booking Analysis</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-arrow-left"></i></a>
+</div>
+
+
+<header>
+ <h1>My Profile</h1>
+ <div class="hero-img">
+
+  <p><span><i class="fa-solid fa-camera"></i></span> Change Picture</p>
+ </div>
+</header>
+<main>
+ <div class="user-status-container">
+ <div class="user-status">
+ <div class="user-status-details">
+					<div class="brand-logo">Brand Logo
+      <div class="status-indicator"><i class="fa-solid fa-camera"></i></div>
+     </div>
+					<div class="icons" id="admin-icons">
+						<span class="brand-name">Brand Name: Timmy Photography</span>
+						<span>Status: Available</span>
+      </div>
+      
+      	</div>
+      <p class="edit">Edit <span><i class="fa-solid fa-pen-to-square"></i></span> </p>
+					
+				
+					</div>
+
+     <div class="Information-container">
+<div class="personal-info">
+ <div class="heads-edit">
+ <h2>Personal Information</h2>
+ <p class="edit">Edit <span><i class="fa-solid fa-pen-to-square"></i></span> </p>
+ </div>
+ <div class="personal">
+
+  <div>
+<label for="fname">First Name</label>
+ <input type="text" name="fname" id="fname">
+ <span id="fname-span">This is not going to appear in your profile</span>
+  </div>
+
+  <label for="lname">Last name
+   <input type="text" name="lname" id="lname">
+  </label>
+
+  <label for="email">Email Address
+   <input type="email" name="email" id="email">
+  </label>
+
+  <label for="number">Phone number
+   <input type="number" name="number" id="number">
+  </label>
+ </div>  <!-- personal end -->
+</div>  <!-- personal info end -->
+
+<!-- address -->
+ <div class="address-info">
+  <div class="heads-edit">
+   <h2>Address</h2>
+   <p class="edit">Edit <span><i class="fa-solid fa-pen-to-square"></i></span> </p>
+  </div>
+<div class="address">
+ <label for="country">Country
+  <input type="text" name="country" id="country">
+ </label>
+
+ <label for="state">City/State
+  <input type="text" name="state" id="state">
+ </label>
+
+ <label for="home">Home/Office Address
+  <input type="text" name="home" id="home">
+ </label>
+</div> <!-- address end -->
+ </div>  <!-- address-info end -->
  
+<!-- social media -->
+<div class="social-info">
+ <div class="heads-edit">
+  <h2>Social Media</h2>
+   <p class="edit">Edit <span><i class="fa-solid fa-pen-to-square"></i></span> </p>
+ </div>
+<div class="socials">
+<label for="facebook">Facebook
+ <input type="text" name="facebook" id="facebook">
+</label>
+
+<label for="instagram">Instagram
+ <input type="text" name="instagram" id="instagram">
+</label>
+
+<label for="tiktok">Tiktok
+ <input type="text" name="tiktok" id="tiktok">
+</label>
+</div>  <!-- socials end -->
+</div>
+
+     </div> <!-- Information-container end -->
+</main>
+
+
+<script src="/js/admin-planner.js"></script>
 </body>
 </html>

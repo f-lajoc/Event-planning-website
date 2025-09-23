@@ -42,7 +42,7 @@ body {
 .topnav a.icon {
 	display: block;
 	position: fixed;
-	left: 10px;
+	left: -10px;
 	top: -5px;
 	animation: nav-icon 2s ease 0s infinite normal forwards;
 }
@@ -84,6 +84,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2rem;
+	margin-top: 1em;
 	flex-wrap: wrap;
 }
 
@@ -139,6 +140,9 @@ body {
 	display: flex;
 	gap: 15px;
 }
+.icon-wrapper a{
+	color: black;
+}
 .header-right .icons {
 	display: flex;
 	flex-direction: column;
@@ -155,6 +159,41 @@ body {
 .top-rated-section{
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-between;
+				background-color: var(--light-card-bg);
+}
+.top-card{
+	display: flex;
+	gap: 10px;
+	background-color:white;
+	border-radius: 8px;
+	align-items: center;
+	margin: 10px;
+	padding: 5px;
+}
+.top-card > p{
+	border-radius: 50%;
+	background-color: #4b2a58;
+	padding: 30px;
+	    color: white;
+    font-size: smaller;
+				align-self: center;
+}
+.top-card > span{
+    align-self: start;
+    padding: 0 5px;
+}
+.top-card-details{
+	display: flex;
+	    flex-direction: column;
+gap: 2px;
+font-size: smaller;
+}
+.top-card-details .h3{
+	font-weight: bold;
+}
+.fa-ellipsis-vertical{
+	align-self: flex-start;
 }
 /* end for admin dashoard*/
 /* end for admin dashoard*/
@@ -255,10 +294,13 @@ body {
 	width: 100%;
 }
 
-/* Responsive adjustments */
+/* Responsiveness */
 @media (max-width: 600px) {
 	body {
 		padding: 1rem;
+	}
+	.topnav a.icon {
+	display: none;
 	}
 	.dashboard-header {
 		flex-direction: row;
