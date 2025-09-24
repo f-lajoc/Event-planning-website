@@ -94,7 +94,7 @@
           </div>
              <div class="vendor-card-footer-buttons">
                             <button>Learn more</button>
-                            <button class="book-service">Book Service</button>
+                            <a href="/pages/chatbox.html"><button class="book-service">Book Service</button></a>
                         </div>
                     </div>
                 `;
