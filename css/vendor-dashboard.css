@@ -140,7 +140,7 @@ body {
 	display: flex;
 	gap: 15px;
 }
-.icon-wrapper a{
+.icon-wrapper a {
 	color: black;
 }
 .header-right .icons {
@@ -149,56 +149,55 @@ body {
 	gap: 5px;
 }
 
-
 /* start for admin dashoard*/
 /* start for admin dashoard*/
 /* start for admin dashoard*/
-.header-right #admin-icons{
+.header-right #admin-icons {
 	gap: 0;
 }
-.top-rated-section{
+.top-rated-section {
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-between;
-				background-color: var(--light-card-bg);
+	justify-content: space-between;
+	background-color: var(--light-card-bg);
 }
-.top-card{
+.top-card {
 	display: flex;
 	gap: 10px;
-	background-color:white;
+	background-color: white;
 	border-radius: 8px;
 	align-items: center;
+	justify-content: space-between;
 	margin: 10px;
 	padding: 5px;
 }
-.top-card > p{
+.top-card > p {
 	border-radius: 50%;
 	background-color: #4b2a58;
 	padding: 30px;
-	    color: white;
-    font-size: smaller;
-				align-self: center;
+	color: white;
+	font-size: smaller;
+	align-self: center;
 }
-.top-card > span{
-    align-self: start;
-    padding: 0 5px;
+.top-card > span {
+	align-self: start;
+	padding: 0 5px;
 }
-.top-card-details{
+.top-card-details {
 	display: flex;
-	    flex-direction: column;
-gap: 2px;
-font-size: smaller;
+	flex-direction: column;
+	gap: 2px;
+	font-size: smaller;
 }
-.top-card-details .h3{
+.top-card-details .h3 {
 	font-weight: bold;
 }
-.fa-ellipsis-vertical{
+.fa-ellipsis-vertical {
 	align-self: flex-start;
 }
 /* end for admin dashoard*/
 /* end for admin dashoard*/
 /* end for admin dashoard*/
-
 
 /* Summary Cards */
 .summary-cards {
@@ -300,7 +299,7 @@ font-size: smaller;
 		padding: 1rem;
 	}
 	.topnav a.icon {
-	display: none;
+		display: none;
 	}
 	.dashboard-header {
 		flex-direction: row;
