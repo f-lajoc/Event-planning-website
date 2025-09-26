@@ -87,7 +87,7 @@ th,td{
  position: absolute;
     top: 5px;
 }
-.fa-arrow-left, .fa-xmark{
+.fa-bars, .fa-xmark{
 background-color: #54105970;
 color: black;
 border-radius: 50%;

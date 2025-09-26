@@ -46,7 +46,7 @@ body {
 	top: -5px;
 	animation: nav-icon 2s ease 0s infinite normal forwards;
 }
-.fa-arrow-left,
+.fa-bars,
 .fa-xmark {
 	background-color: #54105970;
 	color: black;

@@ -291,3 +291,14 @@ allCategories.addEventListener("change", (e) => {
 });
 
 populateAllCategories(allCategories);
+
+// HAMBURGER MENU
+function myFunction() {
+	const x = document.getElementById("myLinks");
+	x.style.left = "0"; // open sidebar
+}
+
+function myFunction2() {
+	const x = document.getElementById("myLinks");
+	x.style.left = "-250px"; // close sidebar
+}

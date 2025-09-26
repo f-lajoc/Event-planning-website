@@ -103,7 +103,7 @@ align-items: center;
     z-index: 1000;
     /* animation: nav-icon 2s ease 0s infinite normal forwards; */
 }
-.fa-arrow-left, .fa-xmark{
+.fa-bars, .fa-xmark{
 background-color: #54105970;
 color: black;
 border-radius: 50%;
