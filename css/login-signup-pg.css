@@ -102,6 +102,8 @@ a {
 #submit {
 	background-color: #541059;
 	color: white;
+border: none;
+
 }
 
 /* larger devices */
@@ -115,12 +117,13 @@ a {
 		padding: 0.5em 0 0 0.5em;
 		/* content: url("/images/login-hero.png"); */
 		height: 74rem;
-		width: 35rem;
+		width: 30rem;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 	}
 	.signup-hero-img {
 		background-image: url("/images/signup-hero.png");
+				height: 120rem;
 	}
 	body {
 		display: flex;
@@ -163,4 +166,60 @@ a {
 	.signup-h1 {
 		font-size: 2rem;
 	}
+}
+
+
+/*Signup extra additions*/
+
+/* Labels */
+#signup-details-form label {
+  font-weight: 600;
+  margin: 0.5em 0 0.2em 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Inputs & Selects */
+#signup-details-form input,
+#signup-details-form select {
+  border: 1px solid #ccc;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input hover & focus */
+#signup-details-form input:focus,
+#signup-details-form select:focus {
+  outline: none;
+  border: 1px solid #541059;
+  box-shadow: 0 0 5px rgba(84, 16, 89, 0.4);
+}
+
+/* Dropdown (role selector) */
+#role {
+  appearance: none; /* remove default arrow */
+  cursor: pointer;
+		padding: 1em;
+}
+#role option{
+	background-color: #541059;
+	color: white;
+}
+/* Checkbox */
+#signup-details-form label[for="T&C"] {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+#signup-details-form input[type="checkbox"] {
+  margin-right: 0.5em;
+  accent-color: #541059; /* modern browsers */
+  cursor: pointer;
+}
+
+/* Submit button hover */
+#signup-details-form #submit:hover {
+  background-color: #6c1b76;
+  transition: background-color 0.3s ease;
 }

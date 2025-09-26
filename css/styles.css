@@ -228,7 +228,8 @@ header h1{
 }
 select{
   padding: .4em;
-  background-color: #EAE5ED;
+  background-color: #541059;
+  color: white;
   border-radius: 5px;
 }
 .fa-magnifying-glass{
@@ -268,7 +269,15 @@ align-items: center
   padding: .5em;
    background-color: #EAE5ED;
    color: black;
+   display: flex;
+ align-items: center;
+ gap: 1em;
 }
+   #catego select{
+    color: white;
+    cursor: pointer;
+    width: 20px;
+   }
 .vendors-header{
   display: flex;
   justify-content: space-between;
