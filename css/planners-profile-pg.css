@@ -183,6 +183,9 @@ ul li {
 	height: 4em;
 	margin-bottom: 1em;
 }
+.send-inquiry a{
+	text-align: center;
+}
 #message {
 	height: 7em;
 }
@@ -191,6 +194,7 @@ ul li {
 	background-color: #541059;
 	color: #d9d9d9;
 	border: none;
+	padding: 1em;
 }
 /* footer */
 footer {

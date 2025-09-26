@@ -112,6 +112,7 @@ const vendors = [
 		ratings: "Excellent",
 	},
 ];
+
 function renderVendors(vendorList) {
 	const tableBody = document.getElementById("vendorTableBody");
 	tableBody.innerHTML = "";
@@ -119,35 +120,36 @@ function renderVendors(vendorList) {
 		const row = document.createElement("tr");
 
 		row.innerHTML = `
-                    <td >${vendor.sn}</td>
-                    <td >${vendor.name}</td>
-                    <td >${vendor.email}</td>
-                    <td >${vendor.location}</td>
-                    <td>${vendor.status}</td>
-                    <td>${vendor.ratings}</td>
-                `;
+      <td>${vendor.sn}</td>
+      <td>${vendor.name}</td>
+      <td>${vendor.email}</td>
+      <td>${vendor.location}</td>
+      <td>${vendor.status}</td>
+      <td>${vendor.ratings}</td>
+    `;
 		tableBody.appendChild(row);
 	});
 }
 
 function searchVendors() {
 	const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-	const filteredVendors = vendors.filter((vendor) => {
-		return Object.values(vendor).some((value) =>
+	const filteredVendors = vendors.filter((vendor) =>
+		Object.values(vendor).some((value) =>
 			String(value).toLowerCase().includes(searchTerm)
-		);
-	});
+		)
+	);
 	renderVendors(filteredVendors);
 }
 
 // Initial render on page load
 document.addEventListener("DOMContentLoaded", () => {
 	renderVendors(vendors);
+
+	// Run search as user types
+	document
+		.getElementById("searchInput")
+		.addEventListener("input", searchVendors);
 });
-
-
-
-
 
 // HAMBURGER MENU
 function myFunction() {

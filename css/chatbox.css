@@ -38,10 +38,16 @@ body {
 .logo,
 .fa-arrow-left {
 	border-radius: 50%;
-	background-color: #bca2be;
-	color: #5d1263;
-	padding: 0.3em;
+    background-color: #bca2be;
+    color: #5d1263;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
 }
+
 .chat-messages {
 	flex-grow: 1;
 	padding: 1rem;

@@ -181,7 +181,11 @@ width: .8em;
 margin-top: 5em;
 background-color: #541059;
 color: #D9D9D9;
+padding: 1em;
 border: none;
+}
+.send-inquiry a{
+  text-align: center;
 }
 /* footer */
 footer{
