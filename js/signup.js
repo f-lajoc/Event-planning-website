@@ -5,15 +5,19 @@
 // 	.addEventListener("submit", async function (e) {
 // 		e.preventDefault();
 // console.log("submitted")
-// 		// collect form values
-// 		const username = document.getElementById("username").value.trim();
-// 		const firstName = document.getElementById("firstName").value.trim();
-// 		const lastName = document.getElementById("lastName").value.trim();
-// 		const email = document.getElementById("identifier").value.trim();
-// 		const phone = document.getElementById("phone").value.trim();
-// 		const password = document.getElementById("password").value.trim();
-// 		const role = document.getElementById("role").value;
+// // 		// Collect form values
+//         const username = document.getElementById("username").value.trim();
+//         const firstName = document.getElementById("firstName").value.trim();
+//         const lastName = document.getElementById("lastName").value.trim();
+//         const email = document.getElementById("email").value.trim();
+//         const password = document.getElementById("password").value.trim();
+//         const confirmPassword = document.getElementById("confirmPassword").value.trim();
 
+//          // Validation: Check password length (basic)
+//         if (password.length < 6) {
+//             alert("Password must be at least 6 characters long!");
+//             return;
+//         }
 // 		try {
 // 			const response = await fetch(
 // 				"https://evently-avc4.onrender.com/auth/register",
@@ -23,13 +27,12 @@
 // 						"Content-Type": "application/json",
 // 					},
 // 					body: JSON.stringify({
-// 						username,
-// 						email,
-// 						password,
-// 						firstName,
-// 						lastName,
-// 						phone,
-// 						role,
+// 						 username,
+//                         email,
+//                         password,
+//                         confirmPassword, // Added this required field
+//                         firstName,
+//                         lastName
 // 					}),
 // 				}
 // 			);
@@ -110,7 +113,7 @@ document.getElementById("signup-details-form")
                     }));
                 }
                 
-                alert("Registration successful! Welcome ${data.username!");
+                alert("`Registration successful! Welcome ${data.username!`");
                 window.location.href = "./login-pg.html"; // redirect to login page
             } else {
                 const error = await response.json();
