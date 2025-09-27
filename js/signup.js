@@ -80,8 +80,6 @@ document.getElementById("signup-details-form")
                 "https://evently-avc4.onrender.com/auth/register",
                 {
                     method: "POST",
-                    mode: "cors", // Explicitly set CORS mode
-                    credentials: "include", // Important for CORS with authentication
                     headers: {
                         "Content-Type": "application/json",
                     },
@@ -92,7 +90,6 @@ document.getElementById("signup-details-form")
                         confirmPassword, // Added this required field
                         firstName,
                         lastName
-                        // Removed phone and role as they're not expected by backend
                     }),
                 }
             );
