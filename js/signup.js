@@ -1,56 +1,5 @@
-// // integrated backend
+// integrated backend
 
-// document
-// 	.getElementById("signup-details-form")
-// 	.addEventListener("submit", async function (e) {
-// 		e.preventDefault();
-// console.log("submitted")
-// // 		// Collect form values
-//         const username = document.getElementById("username").value.trim();
-//         const firstName = document.getElementById("firstName").value.trim();
-//         const lastName = document.getElementById("lastName").value.trim();
-//         const email = document.getElementById("email").value.trim();
-//         const password = document.getElementById("password").value.trim();
-//         const confirmPassword = document.getElementById("confirmPassword").value.trim();
-
-//          // Validation: Check password length (basic)
-//         if (password.length < 6) {
-//             alert("Password must be at least 6 characters long!");
-//             return;
-//         }
-// 		try {
-// 			const response = await fetch(
-// 				"https://evently-avc4.onrender.com/auth/register",
-// 				{
-// 					method: "POST",
-// 					headers: {
-// 						"Content-Type": "application/json",
-// 					},
-// 					body: JSON.stringify({
-// 						 username,
-//                         email,
-//                         password,
-//                         confirmPassword, // Added this required field
-//                         firstName,
-//                         lastName
-// 					}),
-// 				}
-// 			);
-
-// 			if (response.ok) {
-// 				alert("Signup successful! You can now log in.");
-// 				window.location.href = "./login-pg.html"; // redirect to login page
-// 			} else {
-// 				const error = await response.json();
-// 				alert("Signup failed: " + (error.message || JSON.stringify(error)));
-// 			}
-// 		} catch (err) {
-// 			alert("Error connecting to server: " + err.message);
-// 		}
-// 	});
-
-
-// corrected version
 document.getElementById("signup-details-form")
     .addEventListener("submit", async function (e) {
         e.preventDefault();
@@ -113,7 +62,7 @@ document.getElementById("signup-details-form")
                     }));
                 }
                 
-                alert("`Registration successful! Welcome ${data.username!`");
+                alert(`Registration successful! Welcome ${data.username}!`);
                 window.location.href = "./login-pg.html"; // redirect to login page
             } else {
                 const error = await response.json();
