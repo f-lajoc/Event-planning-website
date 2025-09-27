@@ -123,9 +123,9 @@ width: 50px;
 	height: 12px;
 	background-color: #00ff00;
 	border-radius: 50%;
-	position: absolute;
-	bottom: -2px;
-	left: -1px;
+	position: relative;
+    bottom: -25px;
+    left: -50px;
 	border: 2px solid #92759a;
 }
 /*end for planners dashoard */
