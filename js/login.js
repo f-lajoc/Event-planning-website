@@ -4,7 +4,7 @@ document
 	.getElementById("login-details-form")
 	.addEventListener("submit", function (e) {
 		e.preventDefault(); // stop form from refreshing the page
-
+console.log("submitted")
 		// grab the input values
 		const identifier = document.getElementById("identifier").value;
 		const password = document.getElementById("password").value;
@@ -83,3 +83,108 @@ document
 // 			}
 	
 // 		});
+
+
+
+// // corrected js from backend
+// document.getElementById("login-details-form")
+//     .addEventListener("submit", async function (e) {
+//         e.preventDefault();
+//         console.log("Login form submitted");
+
+//         // Collect form values
+//         const username = document.getElementById("username").value.trim();
+//         const password = document.getElementById("password").value.trim();
+//         const rememberMe = document.getElementById("rememberMe").checked;
+
+//         // Basic validation
+//         if (!username || !password) {
+//             alert("Please enter both username and password!");
+//             return;
+//         }
+
+//         try {
+//             console.log("Sending login request to deployed backend...");
+            
+//             const response = await fetch(
+//                 "https://evently-avc4.onrender.com/auth/login", // Using deployed backend
+//                 {
+//                     method: "POST",
+//                     mode: "cors", // Explicitly set CORS mode
+//                     credentials: "include", // Important for CORS with authentication
+//                     headers: {
+//                         "Content-Type": "application/json",
+//                     },
+//                     body: JSON.stringify({
+//                         username,
+//                         password,
+//                         rememberMe
+//                     }),
+//                 }
+//             );
+
+//             console.log("Login response status:", response.status);
+
+//             if (response.ok) {
+//                 const data = await response.json();
+//                 console.log("Login successful:", data);
+                
+//                 // Store the JWT token
+//                 if (data.token) {
+//                     localStorage.setItem('authToken', data.token);
+//                     localStorage.setItem('user', JSON.stringify({
+//                         username: data.username,
+//                         roles: data.roles || []
+//                     }));
+//                     console.log("JWT token stored successfully");
+//                 }
+                
+//                 alert("Welcome back", ${data.username}!);
+                
+//                 // Redirect to dashboard or main page
+//                 window.location.href = "./dashboard.html"; // Change this to your main page
+//             } else {
+//                 const error = await response.json();
+//                 console.error("Login error:", error);
+//                 alert("Login failed: " + (error.message || error.error || "Invalid credentials"));
+//             }
+//         } catch (err) {
+//             console.error("Network error:", err);
+//             alert("Error connecting to server: " + err.message);
+//         }
+//     });
+
+// // Test backend connectivity on page load
+// window.addEventListener('load', async function() {
+//     console.log('Login page loaded');
+//     console.log('Frontend running on:', window.location.origin);
+//     console.log('Backend URL:', 'https://evently-avc4.onrender.com');
+    
+//     // Check if user is already logged in
+//     const authToken = localStorage.getItem('authToken');
+//     const user = localStorage.getItem('user');
+    
+//     if (authToken && user) {
+//         console.log('User already logged in:', JSON.parse(user));
+//         // Optionally redirect to dashboard
+//         // window.location.href = "./dashboard.html";
+//     }
+    
+//     // Test if backend is accessible
+//     try {
+//         const healthResponse = await fetch('https://evently-avc4.onrender.com/health', {
+//             method: 'GET',
+//             mode: 'cors',
+//             credentials: 'include'
+//         });
+        
+//         if (healthResponse.ok) {
+//             const healthData = await healthResponse.json();
+//             console.log('✅ Backend is accessible:', healthData);
+//         } else {
+//             console.warn('⚠️ Backend health check failed:', healthResponse.status);
+//         }
+//     } catch (error) {
+//         console.error('❌ Backend connectivity test failed:', error);
+//     }
+// });

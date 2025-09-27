@@ -100,6 +100,7 @@ align-items: center;
 
 .topnav a.icon {
  position: absolute;
+     top: 15px;
     z-index: 1000;
     /* animation: nav-icon 2s ease 0s infinite normal forwards; */
 }
@@ -114,25 +115,15 @@ padding: .5em;
 background-color: white;
 }
 #logo{
- background-color: white;
-    padding: .5em;
-    color: black;
-    font-size: 1em;
     border-radius: 20px;
-    text-decoration: none;
-    position: relative;
-     z-index: 1000;
 }
+
 .fa-star{
   padding-right: .5em;
   font-size: 1 em;
 }
 .home{
- font-size: 1.2em;
-    text-decoration: none;
-    position: relative;
-  z-index: 2000;
-  color: black;
+ display: none;
 }
 
 /* SIDENAV FOR MOBILE */
@@ -467,9 +458,21 @@ align-items: center;
 nav ul{
   color: red;
 }
+
 .home{
- font-size: 1em;
+  display: inline-block;
+ font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+  z-index: 2000;
+  color: black;
 }
+.logo{
+  display: flex;
+        align-items: center;
+        gap: 2em;
+}
+
 .action-nav-btns button{
   border: 1px solid #541059;
   background-color: #BCA2BE;
@@ -491,7 +494,7 @@ background-color: #541059;
   display: flex;
   flex-direction: row;
   gap: 15px;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
 }
   }
   /* smallest devices */

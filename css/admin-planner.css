@@ -97,13 +97,12 @@ padding: .5em;
 .fa-xmark{
 background-color: white;
 }
-#logo{
-  background-color: white;
-  padding: .5em 1em;
-  color: black;
-  font-size: 1em;
-  margin-bottom: 1em;
+
+ #logo {
+    padding: 0.5em 1em;
+    border-radius: 50px;
 }
+
 .fa-star{
   padding-right: .5em;
   font-size: 1 em;

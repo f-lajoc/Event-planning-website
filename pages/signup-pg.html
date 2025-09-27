@@ -19,87 +19,76 @@
 	</head>
 
 	<body>
-		<!-- for large screen -->
-		<div class="home">
-			<div class="home-icon">
-				<a href="/index.html"><i class="fa-solid fa-circle-left"></i></a>
-			</div>
-			<div class="signup-hero-img">
-				<a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
-			</div>
-		</div>
-		<!-- end -->
+    <!-- for large screen -->
+    <div class="home">
+        <div class="home-icon">
+            <a href="/index.html"><i class="fa-solid fa-circle-left"></i></a>
+        </div>
+        <div class="signup-hero-img">
+            <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </div>
+    <!-- end -->
 
-		<main>
-			<header>
-				<h1 class="signup-h1">Sign up to get started</h1>
-				<p>Event planners meets vendors</p>
-			</header>
+    <main>
+        <header>
+            <h1 class="signup-h1">Sign up to get started</h1>
+            <p>Event planners meets vendors</p>
+        </header>
 
-			<div class="signup-with-socials">
-				<button>
-					<span class="social-icon"
-						><img src="/images/icons/google.png" alt="google icon"
-					/></span>
-					Sign up with Google
-				</button>
-				<button>
-					<span class="social-icon"
-						><img src="/images/icons/facebook.png" alt="facebook icon"
-					/></span>
-					Sign up with Facebook
-				</button>
-			</div>
+        <div class="signup-with-socials">
+              <button onclick="window.location.href='https://evently-avc4.onrender.com/oauth2/authorization/google'">
+                <span class="social-icon"><img src="/images/icons/google.png" alt="google icon" /></span>
+                Sign up with Google
+            </button>
+            <button onclick="window.location.href='https://evently-avc4.onrender.com/oauth2/authorization/facebook'">
+                <span class="social-icon"><img src="/images/icons/facebook.png" alt="facebook icon" /></span>
+                Sign up with Facebook
+            </button>
+        </div>
 
-			<!-- line break -->
-			<div class="signup-alternative-break">
-				<div class="line-break"></div>
-				<p>or</p>
-				<div class="line-break"></div>
-			</div>
-			<!--end of line break -->
+        <!-- line break -->
+        <div class="signup-alternative-break">
+            <div class="line-break"></div>
+            <p>or</p>
+            <div class="line-break"></div>
+        </div>
+        <!--end of line break -->
 
-			<!-- form start -->
-			<form id="signup-details-form">
-				<label for="username">Username</label>
-				<input type="text" name="username" id="username" required />
+        <!-- form start -->
+        <form id="signup-details-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required />
 
-				<label for="firstName">First Name</label>
-				<input type="text" name="firstName" id="firstName" required />
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required />
 
-				<label for="lastName">Last Name</label>
-				<input type="text" name="lastName" id="lastName" required />
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required />
 
-				<label for="identifier">Email</label>
-				<input type="email" name="identifier" id="identifier" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
 
-				<label for="phone">Phone Number</label>
-				<input type="tel" name="phone" id="phone" required />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
 
-				<label for="password">Password</label>
-				<input type="password" name="password" id="password" required />
+            <!-- ADDED: Confirm Password Field -->
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required />
 
-				<label for="role">Role</label>
-				<select name="role" id="role" required>
-					<option value="">--Select Role--</option>
-					<option value="PLANNER">Planner</option>
-					<option value="VENDOR">Vendor</option>
-					<option value="USER">User</option>
-				</select>
+            <label for="T&C">
+                <input type="checkbox" name="T&C" id="T&C" required />
+                I agree with Terms and Privacy conditions
+            </label>
 
-				<label for="T&C">
-					<input type="checkbox" name="T&C" id="T&C" required />
-					I agree with Terms and Privacy conditions
-				</label>
+            <!-- signup btn -->
+            <button id="submit" type="submit">Sign up</button>
+        </form>
+        <!-- form end -->
 
-				<!-- signup btn -->
-				<button id="submit" type="submit">Sign up</button>
-			</form>
-			<!-- form end -->
-
-			<p>Already have an account? <a href="./login-pg.html">Login</a></p>
-		</main>
-
+        <p>Already have an account? <a href="./login-pg.html">Login</a></p>
+    </main>
+				
 		<script src="/js/signup.js"></script>
 	</body>
 </html>

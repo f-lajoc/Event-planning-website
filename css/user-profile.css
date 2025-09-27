@@ -57,17 +57,14 @@ main {
 .user-status .brand-logo {
 	width: 100px;
 	height: 100px;
-	border-radius: 50%;
 	position: relative;
-	background-color: #bca2be;
-	color: black;
 }
+
 .user-status .status-indicator {
 	color: var(--main-purple);
-
 	position: absolute;
-	bottom: -8px;
-	left: 40px;
+	bottom: 180px;
+    left: 60px;
 }
 .icons {
 	display: flex;

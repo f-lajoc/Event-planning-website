@@ -58,11 +58,8 @@ body {
 	background-color: white;
 }
 #logo {
-	background-color: white;
-	padding: 0.5em 1em;
-	color: black;
-	font-size: 1em;
-	margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 50px;
 }
 
 .fa-star {
@@ -106,14 +103,15 @@ body {
 
 .brand-logo {
 	border-radius: 50%;
-	padding: 2em;
-	background-color: var(--main-purple);
-	color: var(--light-card-bg);
+width: 50px;
+    height: 50px;
+				border: 1px solid #541059;
 }
 /*start for planners dashoard */
 /*start for planners dashoard */
 /*start for planners dashoard */
 .header-right .edward-brand-logo {
+	border: 1px solid #541059;
 	width: 50px;
 	height: 50px;
 	background-color: #d3d3d3;
@@ -152,8 +150,19 @@ body {
 /* start for admin dashoard*/
 /* start for admin dashoard*/
 /* start for admin dashoard*/
+
 .header-right #admin-icons {
 	gap: 0;
+}
+
+#admin-status-indicator{
+	width: 12px;
+    height: 12px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    position: absolute;
+    top: 93px;
+    border: 2px solid #92759a;
 }
 .top-rated-section {
 	display: flex;
@@ -313,7 +322,11 @@ body {
 	.summary-card {
 		min-width: unset;
 	}
+	#admin-status-indicator{
+top: 70px;
 }
+}
+
 @keyframes nav-icon {
 	0% {
 		transform: scale(1);

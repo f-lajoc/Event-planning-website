@@ -195,7 +195,9 @@ footer{
 }
 #brand-logo{
   border: 1px solid #541059;
-  height: 20px;
+  height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 .fa-instagram,.fa-tiktok,.fa-facebook-f{
   padding: .5em .5em;

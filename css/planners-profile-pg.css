@@ -203,8 +203,10 @@ footer {
 	align-items: center;
 }
 #brand-logo {
-	border: 1px solid #541059;
-	height: 20px;
+	 border: 1px solid #541059;
+  height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 .fa-instagram,
 .fa-tiktok,
