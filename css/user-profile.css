@@ -55,21 +55,22 @@ main {
 	gap: 10px;
 }
 .user-status .brand-logo {
-	width: 100px;
-	height: 100px;
+	/* width: 100px;
+	height: 100px; */
 	position: relative;
 }
 
-.user-status .status-indicator {
+.status-indicator {
 	color: var(--main-purple);
-	position: absolute;
-	bottom: 180px;
-    left: 60px;
+position: relative;
+    left: -45px;
+    bottom: -25px;
 }
 .icons {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	/* gap: 0.5em; */
+	font-size: .8rem;
 }
 .edit {
 	padding: 5px;
